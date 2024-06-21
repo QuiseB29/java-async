@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer and Notification App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #timer, #notification, #repeatNotification, #countDownTimer {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Countdown Timer</h1>
+    <form id="timerForm">
+        <label for="duration">Enter duration (seconds): </label>
+        <input type="number" id="duration" name="duration" min="1" required>
+        <button type="submit">Start Timer</button>
+    </form>
+    <div id="timer">00:00</div>
+
+    <h1>Delayed Notification</h1>
+    <form id="notificationForm">
+        <label for="delay">Enter delay (milliseconds): </label>
+        <input type="number" id="delay" name="delay" min="1" required>
+        <button type="submit">Set Notification</button>
+    </form>
+    <div id="notification"></div>
+
+    <h1>Repeat Notification</h1>
+    <form id="repeatNotificationForm">
+        <label for="interval">Enter interval (milliseconds): </label>
+        <input type="number" id="interval" name="interval" min="1" required>
+        <button type="submit">Start Repeat Notification</button>
+    </form>
+    <div id="repeatNotification"></div>
+    <button id="stopRepeatNotification" style="display:none;">Stop Repeat Notification</button>
+
+    <h1>Countdown Timer with Delay</h1>
+    <form id="countdownForm">
+        <label for="countdownDuration">Enter countdown duration (seconds): </label>
+        <input type="number" id="countdownDuration" name="countdownDuration" min="1" required>
+        <button type="submit">Start Delayed Countdown Timer</button>
+    </form>
+    <div id="countDownTimer">00:00</div>
+
+    <script src="test.js"></script>
+</body>
+</html>
+
