@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pikachu Information</title>
-    <link rel="stylesheet" href="marvel.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Characters</title>
+  <style>
+    .character {
+      margin: 10px;
+      text-align: center;
+    }
+    .character img {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Pikachu Information</h1>
-        <div id="pokemon-info"></div>
-    </div>
-    <script src="test2.js"></script>
+  <input type="text" id="search" placeholder="Search characters">
+  <div id="character-list"></div>
+  <script src="test2.js"></script>
 </body>
 </html>
+
